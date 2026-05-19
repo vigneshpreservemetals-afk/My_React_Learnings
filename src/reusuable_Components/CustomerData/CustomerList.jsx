@@ -24,9 +24,7 @@ export default function customerList() {
         border:"2px solid black"
     }
 
-    return;
-
-    <div>
+    return <div>
         <table style={tableStyle}>
             <thead>
                 <tr>

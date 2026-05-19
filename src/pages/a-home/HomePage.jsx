@@ -1,7 +1,8 @@
 
 import Header from "../../reusuable_Components/header/Header";
 import Footer from "../../reusuable_Components/footer/Footer";
-import customerList from "../../reusuable_Components/customer_data/customerList";
+import CustomerList from "../../reusuable_Components/CustomerData/CustomerList";
+
 
 export default function HomePage() {
 
@@ -11,7 +12,7 @@ export default function HomePage() {
 
         <div>
             Am a Home Page
-            <customerList/>
+            <CustomerList/>
         </div>
 
         <Footer/>
