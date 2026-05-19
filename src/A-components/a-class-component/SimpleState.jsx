@@ -38,6 +38,8 @@ export default class SimpleState extends React.component{
                 <p> {this.state.student.course} </p>
             </div>
 
+            <hr />
+
             <div className="MentorDetails">
                 <p> {this.state.mentor.name + ',' +this.state.mentor.role + ',' + this.state.men.experience} </p>
             </div>

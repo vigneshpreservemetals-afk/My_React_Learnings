@@ -6,9 +6,7 @@ import customerList from "../../reusuable_Components/customer_data/customerList"
 export default function HomePage() {
 
 
-    return
-
-    <div>
+    return <div>
         <Header/>
 
         <div>
