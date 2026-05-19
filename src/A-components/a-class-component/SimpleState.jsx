@@ -4,7 +4,7 @@ import React from "react";
 export default class SimpleState extends React.component{
 
     constructor(props){
-        super(proper)
+        super(props)
 
         this.state={
             instituteName:"CredoSystems",
@@ -23,13 +23,13 @@ export default class SimpleState extends React.component{
             experience: "5 years"
 
         }
+    }
 
     }
 
 
-    render() {
-        return 
-        <div>
+    render(){
+        return <div>
             <h3> {this.state.instituteName + ',' + this.state.location} </h3>
 
             <div className="StudentDetails">
@@ -42,6 +42,6 @@ export default class SimpleState extends React.component{
                 <p> {this.state.mentor.name + ',' +this.state.mentor.role + ',' + this.state.men.experience} </p>
             </div>
         </div>
-    }
+    
 }
 }
