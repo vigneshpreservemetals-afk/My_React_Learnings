@@ -6,10 +6,11 @@ import DemoPage2 from './Website_Pages/DemoPage2';
 import DemoPage3 from './Website_Pages/DemoPage3';
 import DemoPage4 from './Website_Pages/DemoPage4';
 import DemoPage5 from './Website_Pages/DemoPage5';
+import DemoPage6 from './Website_Pages/DemoPage6';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <DemoPage5 />
+  <DemoPage6 />
   </React.StrictMode>
 );

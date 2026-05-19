@@ -9,9 +9,9 @@ export default function DemoPage4() {
 
         <div>
             {
-                isCarAvailable ? cars.map((value,index) => <p key={index}> {value} </p>)
-                :
-                "car is not available"
+                isCarAvailable? cars.map((value,index) => <p key={index}> {value} </p>)
+                : 
+                "Cars are unavailable at the moment"
             }
         </div>
     )
