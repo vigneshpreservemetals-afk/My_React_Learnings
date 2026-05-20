@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import Homepage from './pages/a-home/HomePage';
-import ContactPage from './pages/c-contact/ContactPage'
+import Parent from './pages/a_props-basic-understand/Parent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <Homepage/>
-  <ContactPage/>
+  <Parent/>
+  
 
   </React.StrictMode>
 );
