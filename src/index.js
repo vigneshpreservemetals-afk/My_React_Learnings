@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import Parent from './pages/a_props-basic-understand/Parent';
-
+import A_Parent from './pages/c-props_callback/A_Parent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <Parent/>
+  <A_Parent/>
   
 
   </React.StrictMode>
