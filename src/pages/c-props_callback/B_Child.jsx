@@ -1,5 +1,5 @@
 
-export default function child(
+export default function B_Child(
     {
         clickMe,
         clickedBy,
