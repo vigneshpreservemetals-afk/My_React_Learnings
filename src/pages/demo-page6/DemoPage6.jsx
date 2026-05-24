@@ -1,27 +1,9 @@
 
 
 import { useState } from "react";
-import StudentsList from '../'
+import StudentsList from '../../core/json/StudentsList.json'
 
 export default function DemoPage6() {
-
-    const StudentsList = [
-        {
-            Name: "Vignesh",
-            Age: 21,
-            School: "DAV School"
-        },
-        {
-            Name: "Kiruba",
-            Age: 22,
-            School: "Kendriya Vidyalaya"
-        },
-        {
-            Name: "Abinaya",
-            Age: 28,
-            School: "Bethel Avenue"
-        }
-    ]
 
     const [Students, setStudents] = useState(StudentsList)
 
