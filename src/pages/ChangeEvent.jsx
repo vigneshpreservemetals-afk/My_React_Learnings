@@ -4,10 +4,10 @@ import { useState } from "react";
 
 export default function ChangeEvent() {
 
-const[SearchText,SetSearchText] = useState()
+    const[SearchBox,SetSearchbox] = useState()
 
-return <div>
-<input type="text" onChange={(value) => SetSearchText(event?.target?.value)} />
-<p> your typed text is : {SearchText} </p>
-</div>
+    return <div>
+    <input type="text" onChange={(event) => SetSearchbox(event?.target?.name)} />
+    <p> your typed text is : {SearchBox} </p>
+    </div>
 }
