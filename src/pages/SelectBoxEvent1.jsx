@@ -1,45 +1,41 @@
  
 import { useState } from "react";
 
-
-import Meals from'../core/json/MealsList.json'
+import Meals from '../core/json/MealsList.json'
 import Menu from '../core/json/MenuList.json'
 
 export default function SelectBoxEvent1() {
 
-const[MealsList,setMealsList] = useState(Meals)
+    const[MealsList,setMealsList] = useState(Meals)
+    const[MenuList, setMenuList]  = useState(Menu)
 
-const[MenuList,setMenuList]   = useState(Menu)
+    const[SelectedMeal, setSelectedMeal] = useState('VG')
 
-const[selectedMeals,setselectedMeals] = useState('VG')
+    return <div>
+    
+    <div> 
+        <h3> Meals List </h3>
 
+        <select onChange={((event)=> setSelectedMeal(event.target.value))}>
 
-return <div>
+            {MealsList.map((value,index) => {
+                return <option value={value?.MealsCode}> {value?.MealsName} </option>
+            })}
+            
+        </select>
 
-<h1> Meals List </h1>
+        <p> your Selected Meals is : {SelectedMeal} </p>
 
-<select onChange={(event) => setselectedMeals(event.target.value)}>
+        <h3> List of Menu Items </h3>
 
-{MealsList.map((value,index)=> {
+        <select> 
+            {MenuList.map((value,index) => {
+                return (SelectedMeal === value.MealsCode) && <option> {value.Menu} </option>
+            } )}
+        </select>
 
-return <option key={index}value={value?.MealsCode}> {value?.MealsName} </option>
+    </div>
+    </div>
 
-})}
-</select>
-
-<p> your selected Meals is : {selectedMeals} </p>
-
-<h1> Menu List </h1>
-
-<select>
-
-{MenuList.map((value,index)=> {
-return (selectedMeals === value.MealsCode) && <option> {value.Menu} </option>
-})
-}
-</select>
-
-
-</div>
 
 }
