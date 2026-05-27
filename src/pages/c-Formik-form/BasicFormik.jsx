@@ -1,6 +1,6 @@
 
 
-import{ Formik, Form, Fastfield} from 'Formik'
+import{ Formik,Form, FastField} from 'formik'
 
 export default function BasicFormik() {
 
@@ -10,13 +10,13 @@ export default function BasicFormik() {
 
         <Formik 
 
-            initialvalues ={{
-                username = "",
-                password = "",
-                country  = ""
+            initialValues ={{
+                username : "",
+                password : "",
+                country  : ""
             }}
 
-            onsubmit = {(values) => {
+            onSubmit = {(values) => {
 
                 console.log("values===>",values)
 
@@ -24,36 +24,36 @@ export default function BasicFormik() {
 
         > 
 
-        <form>
+        <Form>
 
             <div> 
                 <label htmlFor="username"> username </label>
-                <Fastfield type="text" name="username"> username </Fastfield>
+                <FastField type="text" name="username"/> 
             </div>
 
             <div> 
                 <label htmlFor=""> password </label>
-                <Fastfield type="text" name="password"> password </Fastfield>
+                <FastField type="password" name="password"/> 
             </div>
 
             <div> 
                 <label htmlFor=""> country </label>
-                <Fastfield as="select" name="country"> 
+                <FastField as="select" name="country"> 
                 <option value="TN"> Tamil Nadu </option>
                 <option value="PK"> Pakistan </option>
                 <option value="CN"> China </option>
                 <option value="MY"> China </option>
-                </Fastfield>
+                </FastField>
             </div>
 
             <div> 
                 
-                <Fastfield type="submit" name="register" value="Register"> Submit </Fastfield>
+                <button type='submit'> Submit </button>
             </div>
             
             
             
-        </form>    
+        </Form>    
 
 
         </Formik>
