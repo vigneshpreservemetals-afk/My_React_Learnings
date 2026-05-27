@@ -1,0 +1,47 @@
+
+[
+  {
+    "fieldLabelName": "Student Name",
+    "fieldType": "text",
+    "fieldname": "studentName",
+    "fieldID": "student-name",
+    "fieldClass": "",
+    "fieldDeafultValue": "",
+    "fieldCheckboxLabel": ""
+  },
+  {
+    "fieldLabelName": "Email Address",
+    "fieldType": "email",
+    "fieldname": "email",
+    "fieldID": "email",
+    "fieldClass": "",
+    "fieldDeafultValue": "",
+    "fieldCheckboxLabel": ""
+  },
+  {
+    "fieldLabelName": "Phone Number",
+    "fieldType": "number",
+    "fieldname": "phone",
+    "fieldID": "phone",
+    "fieldClass": "",
+    "fieldDeafultValue": "",
+    "fieldCheckboxLabel": ""
+  },
+  {
+    "fieldLabelName": "Gender",
+    "fieldType": "selectbox",
+    "fieldname": "gender",
+    "fieldID": "gender",
+    "fieldClass": "",
+    "options": ["Male", "Female", "Other"]
+  },
+  {
+    "fieldLabelName": "",
+    "fieldType": "submit",
+    "fieldname": "submit",
+    "fieldID": "submit",
+    "fieldClass": "",
+    "buttonText": "Register",
+    "disabled": false
+  }
+]

@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-import BasicForm from'../src/pages/A_basic-form/BasicForm'
+import BasicFormik from './pages/c-Formik-form/BasicFormik';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <BasicForm/>
+  <BasicFormik/>
   
 
   </React.StrictMode>
