@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-import BasicFormikYup from '../src/pages/D-formik-yup-validation/BasicFormikYup'
+import FormikYup from '../src/pages/D-formik-yup-validation/FormikYup'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <BasicFormikYup/>
+  <FormikYup/>
   
 
   </React.StrictMode>
