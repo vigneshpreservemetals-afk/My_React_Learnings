@@ -1,64 +1,55 @@
 
 
-import{ Formik,Form, FastField} from 'formik'
+import { Formik, Form , FastField,} from 'formik'
 
 export default function BasicFormik() {
 
     return <div>
 
-        <h3> Basic Formik </h3>
+        <Formik
+        
+        initialValues = {{
+            username :"",
+            password : "",
+            country  : "IN"
+        }}
 
-        <Formik 
+        onSubmit = {(values) => {
+            console.log("values===>",values)
+            
+        }}
+        >
+            <Form>
 
-            initialValues ={{
-                username : "",
-                password : "",
-                country  : ""
-            }}
+                <div>
+                <label htmlFor=""> User Name</label>
+                <FastField type="text" name="username"/>
+                </div>
 
-            onSubmit = {(values) => {
-
-                console.log("values===>",values)
-
-            }}
-
-        > 
-
-        <Form>
-
-            <div> 
-                <label htmlFor="username"> username </label>
-                <FastField type="text" name="username"/> 
-            </div>
-
-            <div> 
+                <div>
                 <label htmlFor=""> password </label>
-                <FastField type="password" name="password"/> 
-            </div>
+                <FastField type="password" name="password"/>
+                </div>
 
-            <div> 
+                 <div>
                 <label htmlFor=""> country </label>
-                <FastField as="select" name="country"> 
-                <option value="TN"> Tamil Nadu </option>
-                <option value="PK"> Pakistan </option>
+                <FastField as="select" name="country">
+                <option value="IN"> India </option>
+                <option value="PK"> Pakisthan </option>
+                <option value="MY"> Malaysia </option>
                 <option value="CN"> China </option>
-                <option value="MY"> China </option>
                 </FastField>
-            </div>
+                </div>
 
-            <div> 
-                
-                <button type='submit'> Submit </button>
-            </div>
-            
-            
-            
-        </Form>    
+                <div>
+                <button type="submit"> Submit </button>
+                </div>
 
+
+            </Form>
+        
+        
 
         </Formik>
     </div>
 }
-
-
-
