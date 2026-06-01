@@ -1,132 +1,67 @@
 import { useState } from "react";
-import StudentFormJson from "./StudentForm.json";
+import formFields from "./form-config/StudentFormJson.json";
 
-export default function StudentForm() {
+export default function JsonLoginForm() {
+  const [formData, setFormData] = useState({});
 
-    const [formData, setFormData] = useState({})
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
 
-    const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-        const name = event.target.name
-        const value = event.target.value
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+  };
 
-        setFormData({
-            ...formData,
-            [name]: value
-        })
-    }
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        {formFields.map((value, index) => {
+          return (
+            <div key={index}>
+              <label>{value.fieldLabel}</label>
 
-    const handleSubmit = (event) => {
+              {(value.fieldType === "text" ||
+                value.fieldType === "password" ||
+                value.fieldType === "number") && (
+                <input
+                  type={value.fieldType}
+                  name={value.fieldName}
+                  onChange={handleChange}
+                />
+              )}
 
-        event.preventDefault()
+              {value.fieldType === "select" && (
+                <select
+                  name={value.fieldName}
+                  onChange={handleChange}
+                >
+                  <option value="">Select Country</option>
 
-        console.log(formData)
+                  {value.option?.map((option, optionIndex) => (
+                    <option
+                      key={optionIndex}
+                      value={option}
+                    >
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </div>
+          );
+        })}
 
-        alert("Form Submitted")
-    }
-
-    return (
         <div>
-
-            <h1>Student Registration Form</h1>
-
-            <form onSubmit={handleSubmit}>
-
-                {
-                    StudentFormJson.map((field, index) => {
-
-                        // TEXT / EMAIL / NUMBER INPUTS
-                        if (
-                            field.fieldType === "text" ||
-                            field.fieldType === "email" ||
-                            field.fieldType === "number"
-                        ) {
-
-                            return (
-                                <div key={index}>
-
-                                    <label>
-                                        {field.fieldLabelName}
-                                    </label>
-
-                                    <br />
-
-                                    <input
-                                        type={field.fieldType}
-                                        name={field.fieldname}
-                                        id={field.fieldID}
-                                        onChange={handleChange}
-                                    />
-
-                                    <br />
-                                    <br />
-
-                                </div>
-                            )
-                        }
-
-                        // SELECT BOX
-                        if (field.fieldType === "selectbox") {
-
-                            return (
-                                <div key={index}>
-
-                                    <label>
-                                        {field.fieldLabelName}
-                                    </label>
-
-                                    <br />
-
-                                    <select
-                                        name={field.fieldname}
-                                        onChange={handleChange}
-                                    >
-
-                                        <option>
-                                            Select Gender
-                                        </option>
-
-                                        {
-                                            field.options.map((option, optionIndex) => (
-
-                                                <option key={optionIndex}>
-                                                    {option}
-                                                </option>
-
-                                            ))
-                                        }
-
-                                    </select>
-
-                                    <br />
-                                    <br />
-
-                                </div>
-                            )
-                        }
-
-                        // SUBMIT BUTTON
-                        if (field.fieldType === "submit") {
-
-                            return (
-                                <div key={index}>
-
-                                    <button
-                                        type="submit"
-                                        disabled={field.disabled}
-                                    >
-                                        {field.buttonText}
-                                    </button>
-
-                                </div>
-                            )
-                        }
-
-                    })
-                }
-
-            </form>
-
+          <button type="submit">Submit</button>
         </div>
-    )
+      </form>
+    </div>
+  );
 }
