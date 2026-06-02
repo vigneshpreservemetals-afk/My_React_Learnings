@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-import LifeCycleMethod from '../src/pages/LifeCycleMethods/LifeCycleMethods'
+import LifeCycleMethods1 from './pages/LifeCycleMethods/LifeCycleMethod1';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <LifeCycleMethod/>
+  <LifeCycleMethods1/>
   
 
   </React.StrictMode>
