@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import DemoPage1 from './Website_Pages/DemoPage1';
+import DemoPage2 from './Website_Pages/DemoPage2';
+import DemoPage3 from './Website_Pages/DemoPage3';
+import DemoPage4 from './Website_Pages/DemoPage4';
+import DemoPage5 from './Website_Pages/DemoPage5';
+import DemoPage6 from './Website_Pages/DemoPage6';
+import DemoPage7 from './Website_Pages/DemoPage7';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <h1> Welcome to React JS World </h1>
+  <DemoPage7 />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
