@@ -1,0 +1,36 @@
+ [
+     {
+        "MealsCode" : "VG",
+        "Menu" : "Briyani"
+     },
+     {
+        "MealsCode" : "VG",
+        "Menu" : "Paneer"
+     },
+     {
+        "MealsCode" : "VG",
+        "Menu" : "Pulav"
+     },
+     {
+        "MealsCode" : "VG",
+        "Menu" : "Brinji"
+     },
+
+     {
+        "MealsCode" : "N-VG",
+        "Menu" : "Chicken Briyani"
+     },
+     {
+        "MealsCode" : "N-VG",
+        "Menu" : "Mutton Briyani"
+     },
+     {
+        "MealsCode" : "N-VG",
+        "Menu" : "Chicken Fried Rice"
+     },
+     {
+        "MealsCode" : "N-VG",
+        "Menu" : "Chicken 65"
+     }
+
+   ]
