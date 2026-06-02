@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-import LifeCycleMethods1 from './pages/LifeCycleMethods/LifeCycleMethod1';
+import MountingPhase from '../src/pages/side-effects/a_mounting-phase/MountingPhase'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <LifeCycleMethods1/>
+  <MountingPhase/>
   
 
   </React.StrictMode>
