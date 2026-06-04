@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import AboutPage from './pages/about/AboutPage';
-import Contactpage from './pages/contact/Contactpage';
+import RoutingOutlet from './pages/router/RoutingOutlet';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 root.render(
   <React.StrictMode>
-  <Contactpage/>
+  <RoutingOutlet/>
   
 
   </React.StrictMode>
