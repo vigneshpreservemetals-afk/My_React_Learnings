@@ -1,0 +1,19 @@
+
+
+[
+        {
+            "Name": "Vignesh",
+            "Age": 21,
+            "School": "DAV School"
+        },
+        {
+            "Name": "Kiruba",
+            "Age": 22,
+            "School": "Kendriya Vidyalaya"
+        },
+        {
+            "Name": "Abinaya",
+            "Age": 28,
+            "School": "Bethel Avenue"
+        }
+    ]
