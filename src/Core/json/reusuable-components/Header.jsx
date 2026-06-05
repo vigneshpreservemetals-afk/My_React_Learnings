@@ -8,5 +8,6 @@ return <div className="bg-primary">
 
     <p> <Link to ={"/about"} className="text-white" > About </Link> </p>
     <p> <Link to ={"/contact"} className="text-white" > Contact </Link> </p>
+    <p> <Link to ={"/home"} className="text-white" > Home </Link> </p>
 </div>
 }
