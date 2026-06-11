@@ -1,26 +1,15 @@
 
-import { useParams, useLocation, useNavigation } from "react-router";
+
 
 export default function Homepage() {
 
-    const params = useParams()
-    const location = useLocation()
-    const searchParams = new URLSearchParams(location.search);
 
-    const id = searchParams.get("id");
-    const name = searchParams.get("name")
+return <div>
 
+  <h3> Home Page </h3>
 
-    console.log("params===>",params)
-    console.log("id===>",id)
-    console.log("name===>",name);
+  <button> Log Out</button>
 
-    return <div>
+</div>
 
-      <h2> View Home Page </h2>  
-      <p> param id ={id} </p>
-      <p> param name = {name} </p>
-
-        
-    </div>
 }
