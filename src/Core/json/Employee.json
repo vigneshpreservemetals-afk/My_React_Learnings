@@ -1,0 +1,18 @@
+
+{
+    "Name":"Vignesh",
+    "Age":29,
+    "Qualification": "BE-Mechanical",
+    "Profession": "IT(Software Engineer)",
+    "Address": {
+        "StreetName": "2nd Cross Streeet",
+        "Area":"Velachery",
+        "city":"Chennai",
+        "Pincode":600042
+    },
+    "salary":{
+        "Pf":4500,
+        "grossSalary":50000,
+        "NetSalary": 45500
+    } 
+}

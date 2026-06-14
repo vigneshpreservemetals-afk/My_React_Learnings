@@ -1,0 +1,10 @@
+[
+    {
+        "MealsCode": "VG",
+        "MealsName": "Veg"
+    },
+    {
+        "MealsCode": "N-VG",
+        "MealsName": "Non Veg"
+    }
+]
