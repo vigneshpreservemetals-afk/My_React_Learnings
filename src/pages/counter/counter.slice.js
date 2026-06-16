@@ -16,6 +16,10 @@ export const CounterSlice = createSlice(
                 state.count += 1
             },
 
+            addby10:(state,action)=> {
+                state.count += action.payload.input
+            },
+
             sub:(state,action)=> {
                 state.count -= 1
             },
@@ -32,5 +36,5 @@ export const CounterSlice = createSlice(
     }
 )
 
-export const {add,sub,mul,div} =CounterSlice.actions
+export const {add,addby10,sub,mul,div} =CounterSlice.actions
 export default CounterSlice.reducer

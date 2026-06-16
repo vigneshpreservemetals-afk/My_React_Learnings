@@ -1,6 +1,6 @@
 
 import { useSelector,useDispatch } from "react-redux";
-import { add,sub,mul,div } from "./counter.slice";
+import { add,addby10,sub,mul,div } from "./counter.slice";
 
 
 export default function CounterPage() {
@@ -19,6 +19,8 @@ export default function CounterPage() {
     <button onClick={()=> dispatch((add()))}> Add </button>
 
     <button onClick={()=> dispatch((sub()))}> Sub </button>
+
+    <button onClick={()=> dispatch((addby10({input:10})))}> Add by 10 </button>
 
     <button onClick={()=> dispatch((mul()))}> Mul </button>
     
