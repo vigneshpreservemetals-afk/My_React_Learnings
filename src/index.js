@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import LocalDateTime from './pages/LocalDateTime';
+import ThemeTogglen from './pages/ThemeToggle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <LocalDateTime />
+  <ThemeToggle />
   </React.StrictMode>
 );
