@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import LocalDateTime from './pages/LocalDateTime';
+import App from './pages/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <LocalDateTime />
+  <App />
   </React.StrictMode>
 );
