@@ -1,10 +1,10 @@
 
-import LoginLogoutProps from "./LoginLogoutProps";
+import FormikValidations from "./FormikValidations";
 
 export default function App(){
 
     return( 
-        <LoginLogoutProps name="Vignesh"/>
+        <FormikValidations/>
     )
 
 }
