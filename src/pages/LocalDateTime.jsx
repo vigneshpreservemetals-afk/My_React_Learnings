@@ -1,31 +1,28 @@
-
-
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 export default function LocalDateTime() {
 
-const[currentDateTime,setCurrentDateTime] = useState("");
+  const[currentDateTime,setCurrentDateTime] = useState("");
 
-const ShowCurrentDateTime = () => {
+  const showCurrentDateTime = () => {
 
-  const CurrentTimeZone = new Date () ;
+    const CurrentTimeZone = new Date();
 
-  const LocalTimeZone   = CurrentTimeZone.toLocaleString();
+    const LocalTimeZone   = CurrentTimeZone.toLocaleString();
 
-  setCurrentDateTime(LocalTimeZone);
+    setCurrentDateTime(LocalTimeZone);
+  }
+
+  return(
+
+    <div>
+
+      <h3> {currentDateTime} </h3>
+
+      <button onClick={showCurrentDateTime}> Current Date & Time </button>
+
+    </div>
+  )
 }
-
-return(
-
-  <div>
-
-    <h3> {currentDateTime} </h3>
-
-    <button onClick={ShowCurrentDateTime}> Current Date & Time </button>
-
-  </div>
-)
-}
-
 
 
