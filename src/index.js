@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import FormikValidations from './pages/FormikValidations';
+import BasicFormik from './pages/BasicFormik';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FormikValidations />
+  <BasicFormik />
   </React.StrictMode>
 );
